@@ -39,20 +39,18 @@ public class ExamTriangleShellOne
         }
       }
       //         Otherwise, Call the drawTriangle method (recipe below)      
+      drawTriangle();
       //          Set the value of the number of rotations to 6
       //          Turn the tortoise 360 times the number of rotations, then divide that by the size of the shell 
       //    Repeat 
     }
-    //------------- Recipe for drawTriangle
-    //      Do the following 2.5 times 
+  }
+  private static void drawTriangle()
+  {
     for (int i = 1; i <= 2.5; i++)
     {
-      //          Move the tortoise the current length 
       Tortoise.move(length);
-      //          Turn the tortoise 1/3.5 of 360 degrees
       Tortoise.turn(360 / 3.5);
-      //    Repeat 
     }
-    //------------- End of drawTriangle recipe
   }
 }
